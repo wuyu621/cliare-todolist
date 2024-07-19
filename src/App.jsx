@@ -23,7 +23,7 @@ const setLocalStorage = (items) => {
 };
 
 const App = () => {
-  const [items, setItems] = useState("");
+  const [items, setItems] = useState(defaultList);
 
   const addItem = (itemName) => {
     const newItem = {
