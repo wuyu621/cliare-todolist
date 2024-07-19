@@ -329,9 +329,19 @@ ul {
 }
 
 .noTaskList {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 5rem;
   color: var(--primary-800);
+}
+
+.noTaskList img {
+  width: 20%;
+}
+
+.noTaskList em {
+  font-size: 1.5rem;
 }
 
 .title {
@@ -343,4 +353,18 @@ ul {
 
 .title img {
   width: 20%;
+}
+
+footer {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--grey-500);
+}
+
+footer img {
+  width: 2%;
 }

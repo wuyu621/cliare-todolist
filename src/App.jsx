@@ -5,6 +5,7 @@ import Items from "./Items";
 import { ToastContainer, toast } from "react-toastify";
 import EmptyList from "./EmptyList";
 import Completed from "./Completed";
+import Footer from "./Footer";
 
 // const getLocalStorage = () => {
 //   let list = localStorage.getItem("list");
@@ -61,16 +62,19 @@ const App = () => {
     items.length > 0 && items.every((item) => item.completed);
 
   return (
-    <section className="section-center">
-      <Form addItem={addItem} />
-      {items.length !== 0 ? (
-        <Items items={items} removeItem={removeItem} editItem={editItem} />
-      ) : (
-        <EmptyList />
-      )}
-      {allCompleted && <Completed />}
-      <ToastContainer position="top-center" />
-    </section>
+    <main>
+      <section className="section-center">
+        <Form addItem={addItem} />
+        {items.length !== 0 ? (
+          <Items items={items} removeItem={removeItem} editItem={editItem} />
+        ) : (
+          <EmptyList />
+        )}
+        {allCompleted && <Completed />}
+        <ToastContainer position="top-center" />
+      </section>
+      <Footer />
+    </main>
   );
 };
 
