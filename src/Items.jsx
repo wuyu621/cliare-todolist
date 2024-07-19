@@ -12,7 +12,7 @@ const Items = ({ items, removeItem, editItem, clearList }) => {
           editItem={editItem}
         />
       ))}
-      <button className="btn" onClick={clearList}>
+      <button className="btn clear" onClick={clearList}>
         clear the list
       </button>
     </div>

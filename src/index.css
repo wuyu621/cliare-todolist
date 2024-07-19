@@ -368,3 +368,8 @@ footer {
 footer img {
   width: 3%;
 }
+
+.clear {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
