@@ -256,7 +256,6 @@ ul {
 
 .section-center {
   width: 90vw;
-  height: 70vh;
   margin: 0 auto;
   margin-top: 8rem;
   max-width: 30rem;
@@ -270,10 +269,6 @@ ul {
   box-shadow: var(--shadow-3);
 }
 
-form h4 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
 .form-control {
   display: grid;
   grid-template-columns: 1fr 100px;
@@ -337,4 +332,15 @@ form h4 {
   text-align: center;
   padding-top: 5rem;
   color: var(--primary-800);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.title img {
+  width: 20%;
 }
