@@ -1,7 +1,7 @@
 import React from "react";
 import Item from "./SingleItem";
 
-const Items = ({ items, removeItem, editItem }) => {
+const Items = ({ items, removeItem, editItem, clearList }) => {
   return (
     <div className="items">
       {items.map((item) => (
@@ -12,6 +12,9 @@ const Items = ({ items, removeItem, editItem }) => {
           editItem={editItem}
         />
       ))}
+      <button className="btn" onClick={clearList}>
+        clear the list
+      </button>
     </div>
   );
 };

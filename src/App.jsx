@@ -57,6 +57,12 @@ const App = () => {
     setLocalStorage(newItems);
   };
 
+  const clearList = () => {
+    const newItems = [];
+    setItems(newItems);
+    setLocalStorage(newItems);
+  };
+
   //check if all the task were completed
   const allCompleted =
     items.length > 0 && items.every((item) => item.completed);
@@ -66,7 +72,12 @@ const App = () => {
       <section className="section-center">
         <Form addItem={addItem} />
         {items.length !== 0 ? (
-          <Items items={items} removeItem={removeItem} editItem={editItem} />
+          <Items
+            items={items}
+            removeItem={removeItem}
+            editItem={editItem}
+            clearList={clearList}
+          />
         ) : (
           <EmptyList />
         )}
