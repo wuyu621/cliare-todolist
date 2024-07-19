@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
+import pikaface from "./assets/images/pikaface.svg";
 const Form = ({ addItem }) => {
   const [newItem, setNewItem] = useState("");
 
@@ -14,7 +15,11 @@ const Form = ({ addItem }) => {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <h4>Claire's to do list</h4>
+      <div className="title">
+        <img src={pikaface} alt="pikaHead" />
+        <h4>Claire's to do list</h4>
+      </div>
+
       <p className="date">- {new Date().toDateString()} -</p>
       <div className="form-control">
         <input
