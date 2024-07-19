@@ -16,11 +16,10 @@ import Completed from "./Completed";
 //   return list;
 // };
 
-const defaultList = JSON.parse(localStorage.getItem("list")) || "[]";
-
 const setLocalStorage = (items) => {
   localStorage.setItem("list", JSON.stringify(items));
 };
+const defaultList = JSON.parse(localStorage.getItem("list") || "[]");
 
 const App = () => {
   const [items, setItems] = useState(defaultList);
