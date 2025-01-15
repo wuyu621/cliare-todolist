@@ -1,5 +1,5 @@
-## Kids todo list app
-Welcome to **Pika Todo List App**, a simple to-do list app designed for kids, allowing them to add, delete, and mark tasks as completed. The app features fun cartoon characters and, upon completing a list, an encouraging cartoon character pops up to celebrate their progress
+## Kids Todo List app
+Welcome to **Pika Todo List App**, a simple to-do list app designed for kids, allowing them to add, delete, and mark tasks as completed. The app features fun cartoon characters and, upon completing a list, an encouraging cartoon character pops up to celebrate their progress.
 
 Check out the live version of the app: [Pika Todo List](https://claire-todolist.netlify.app/))
 
